@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\indexController;
+use App\Http\Controllers\aboutUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [indexController::class, 'index'])->name('home');
+
+Route::get('/about-us', [aboutUsController::class, 'aboutUs'])->name('about-us');

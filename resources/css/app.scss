@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c5c5c5;
+    color: red;
+}
+
+.navbar {
+    background-color: gray;
+    color:white;
+}
+.navbar a {
+    text-decoration: none;
+    color:white;
+}
+
+.navbar a:hover {
+
+    color: rgba($color: #fff, $alpha: .5)
+
+}
